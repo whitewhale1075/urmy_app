@@ -3,7 +3,7 @@ module github.com/urmy_app
 go 1.16
 
 replace (
-	github.com/whitewhale1075/urmy_handler v0.0.0 => /home/johnoh/goproject/urmy_handler
+	github.com/whitewhale1075/urmy_handler v0.0.0 => /home/johnoh/goproject/urmy/urmy_handler
 )
 
 require (
