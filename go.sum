@@ -16,7 +16,7 @@ github.com/unrolled/render v1.0.3 h1:baO+NG1bZSF2WR4zwh+0bMWauWky7DVrTOfvE2w+aFo
 github.com/unrolled/render v1.0.3/go.mod h1:gN9T0NhL4Bfbwu8ann7Ry/TGHYfosul+J0obPf6NBdM=
 github.com/urfave/negroni v1.0.0 h1:kIimOitoypq34K7TG7DUaJ9kq/N4Ofuwi1sjz0KipXc=
 github.com/urfave/negroni v1.0.0/go.mod h1:Meg73S6kFm/4PpbYdq35yYWoCZ9mS/YSx+lKnmiohz4=
-github.com/whitewhale1075/urmy_handler v0.0.0-20210329021233-d5c92137783f h1:OLC8QJ0XjeYDcVZUGXI5zkQVUkW240ocN/Vzv8Tytos=
-github.com/whitewhale1075/urmy_handler v0.0.0-20210329021233-d5c92137783f/go.mod h1:pdfq/aPdWgpq2IGqSU3p1e7DwGoTr94KmCQxXHqd/dQ=
+github.com/whitewhale1075/urmy_handler v0.0.0 h1:QGSwY7UP6AQ/8fBfLqysqUfBhHJESzJHcN/PQBeLzOA=
+github.com/whitewhale1075/urmy_handler v0.0.0/go.mod h1:bp/86Dks0Use6p8/3uL8skmLGN4xGskfgHe06f03TzQ=
 gopkg.in/redis.v5 v5.2.9 h1:MNZYOLPomQzZMfpN3ZtD1uyJ2IDonTTlxYiV/pEApiw=
 gopkg.in/redis.v5 v5.2.9/go.mod h1:6gtv0/+A4iM08kdRfocWYB3bLX2tebpNtfKlFT6H4mY=
