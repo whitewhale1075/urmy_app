@@ -1,4 +1,4 @@
-module github.com/urmy_app
+module github.com/whitewhale1075/urmy_app
 
 go 1.16
 
