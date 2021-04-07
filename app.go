@@ -240,9 +240,10 @@ func (a *AppHandler) addUrMyUserHandler(w http.ResponseWriter, r *http.Request) 
 		palja = a.sj.ExtractDaeUnSaeUn(result, palja)
 		sajuerr := a.db.InputUrMySaJuInfo(t.LoginID, palja)
 		if sajuerr != nil {
-			rd.JSON(w, http.StatusCreated, Success{true})
-		} else {
 			rd.JSON(w, http.StatusCreated, Success{false})
+		} else {
+
+			rd.JSON(w, http.StatusCreated, Success{true})
 		}
 
 		//a.db.InputUrMySaJuDaeSaeUnInfo(t.LoginID, palja)
