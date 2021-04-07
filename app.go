@@ -120,10 +120,10 @@ func MakeHandler() *AppHandler {
 		configfile: configfile,
 	}
 
-	r.HandleFunc("/app/login", a.getUrMyUserHandler).Methods("POST")
-	r.HandleFunc("/app/register", a.addUrMyUserHandler).Methods("POST")
-	r.HandleFunc("/app/registeradditional", a.addUrMyAdditionalHandler).Methods("POST")
-	r.HandleFunc("/app/friendlist", a.friendlistHandler).Methods("POST")
+	r.HandleFunc("/login", a.getUrMyUserHandler).Methods("POST")
+	r.HandleFunc("/register", a.addUrMyUserHandler).Methods("POST")
+	r.HandleFunc("/registeradditional", a.addUrMyAdditionalHandler).Methods("POST")
+	r.HandleFunc("/friendlist", a.friendlistHandler).Methods("POST")
 	return a
 }
 
@@ -139,7 +139,6 @@ func (a *AppHandler) friendlistHandler(w http.ResponseWriter, r *http.Request) {
 		panic(err)
 	}
 	userid := a.tokenVerifyProcessHandler(w, r)
-
 	mysaju, errmysaju := a.db.GetMySaju(userid)
 	if errmysaju != nil {
 		fmt.Println(errmysaju)
@@ -224,6 +223,7 @@ func (a *AppHandler) getUrMyUserHandler(w http.ResponseWriter, r *http.Request) 
 }
 
 func (a *AppHandler) addUrMyUserHandler(w http.ResponseWriter, r *http.Request) {
+
 	body, err := ioutil.ReadAll(r.Body)
 	if err != nil {
 		panic(err)
@@ -244,6 +244,7 @@ func (a *AppHandler) addUrMyUserHandler(w http.ResponseWriter, r *http.Request) 
 		} else {
 			rd.JSON(w, http.StatusCreated, Success{false})
 		}
+
 		//a.db.InputUrMySaJuDaeSaeUnInfo(t.LoginID, palja)
 	} else {
 		rd.JSON(w, http.StatusCreated, Success{false})
