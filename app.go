@@ -120,10 +120,10 @@ func MakeHandler() *AppHandler {
 		configfile: configfile,
 	}
 
-	r.HandleFunc("/login", a.getUrMyUserHandler).Methods("POST")
-	r.HandleFunc("/register", a.addUrMyUserHandler).Methods("POST")
-	r.HandleFunc("/registeradditional", a.addUrMyAdditionalHandler).Methods("POST")
-	r.HandleFunc("/friendlist", a.friendlistHandler).Methods("POST")
+	r.HandleFunc("/app/login", a.getUrMyUserHandler).Methods("POST")
+	r.HandleFunc("/app/register", a.addUrMyUserHandler).Methods("POST")
+	r.HandleFunc("/app/registeradditional", a.addUrMyAdditionalHandler).Methods("POST")
+	r.HandleFunc("/app/friendlist", a.friendlistHandler).Methods("POST")
 	return a
 }
 
