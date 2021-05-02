@@ -7,6 +7,6 @@
 > It is not developed fully yet. Still have lots of work to do
 
 ## Using
-> mux-gorilla-negroni
+> gorilla-mux / negroni middleware
 
 
